@@ -1,15 +1,16 @@
-<swiper  indicator-dots="true" autoplay="true" >
+<swiper  class="swiper" indicator-dots="true" autoplay="true" >
     <block wx:for="{{swiperImgUrls}}">
         <swiper-item>
-            <image src="{{item}}" class="slide-image" style="width='100%' background-color: #eeeeee;" mode="aspectFill"/>
+            <image src="{{item}}" class="slide-image" mode="scaleToFill"/>
         </swiper-item>
     </block>
 </swiper>
-<view class="flex-wrp" style="flex-direction:row">
-    <view class="flex-item" >你好</view>
-    <view class="flex-item" >你好</view>
+<view class="menu_container">
+    <navigator class="menu-item" wx:for="{{menu}}" url="../{{item.url}}/{{item.url}}">
+        <image src="{{item.icon}}" mode="scaleToFill"></image>
+        <text>{{item.name}}</text>
+    </navigator>
 </view>
-
-
+<view class="sub_title_text">热点推荐</view>
 
 
