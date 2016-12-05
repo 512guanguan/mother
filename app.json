@@ -10,6 +10,8 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
+    "color":"#412B51",
+    "selectedColor":"#06BD04",
     "list": [{
       "pagePath": "pages/main/main",
       "text": "首页",
