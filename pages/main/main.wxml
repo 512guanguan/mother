@@ -12,5 +12,16 @@
     </navigator>
 </view>
 <view class="sub_title_text">热点推荐</view>
-
-
+<view class="recommend_container" wx:for="{{recommendList}}" bindtap="recommendClick" data-url="{{item.url}}">
+    <image class="recommend_icon" src="../../res/image/icon_01.png" mode="scaleToFill"></image>
+    <view class="recommend_right">
+        <text class="recommend_title">{{item.title}}</text>
+        <view class="recommend_right_bottom_container">
+            <text class="recommend_author" >{{item.author}}</text>
+            <view class="recommend_comment_container">
+                <image class="recommend_comment_icon" src="../../res/image/icon_01.png"></image>
+                <text>{{item.comment_sum}}</text>
+            </view>
+        </view>
+    </view>
+</view>

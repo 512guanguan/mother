@@ -10,6 +10,7 @@
   display: flex;
   width: 100%;
   background-color: #eee;
+  box-sizing:border-box;
   padding: 1px;
 }
 .menu-item{
@@ -28,18 +29,71 @@
 	line-height: 1.4;
 	white-space: nowrap;
 }
-.sub_title{
-  width: 100%;
-  background-color:honeydew;
-  padding-top: 3px;
-  margin-top: 10rpx;
-}
+
 .sub_title_text{
   width: 100%;
   background-color:honeydew;
+  box-sizing:border-box;
   border-left:10rpx solid red;
   padding-left: 15rpx;
   margin-top: 10rpx;
   text-align: left center;
-  -webkit-text-fill-color: red
+  -webkit-text-fill-color: red;
+}
+.recommend_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing:border-box;
+  padding: 2px;
+  margin-bottom: 5px;
+  background-color: azure;
+}
+.recommend_icon{
+  width: 100rpx;
+	height: 100rpx;
+  padding: 10rpx;
+}
+.recommend_right{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.recommend_title{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.recommend_right_bottom_container{
+  padding-top:25rpx;
+  padding-bottom: 5rpx;  
+  display: flex;
+  flex-direction: row;
+  font-size:small;
+}
+.recommend_author{
+  margin-left: 2px;
+  vertical-align: bottom;
+}
+.recommend_comment_container{
+  margin-left: auto;
+  margin-right: 0px;
+  padding-left: 5rpx;
+  box-sizing: border-box;
+}
+.recommend_comment_icon{
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align: bottom;
+  background-color: rebeccapurple;
+}
+.recommend_comment_container text{
+  width: 100px;
+  line-height: 35rpx;
+  text-align: left;
+  padding-left: 5px;
+  padding-right: 15px;
+  background-color: orangered;
 }

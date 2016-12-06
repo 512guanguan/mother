@@ -2,6 +2,7 @@ Page({
   data:{
     swiperImgUrls:[],
     menu:[],
+    recommendList:[],
     log:""
   },
   onLoad:function(options){
@@ -62,7 +63,32 @@ Page({
           "name":"马子",
           "icon":"../../res/image/icon_01.png"
         }
+      ],
+      recommendList:[
+        { "url":"www.baidu.com",
+          "icon_url":"../../res/image/icon_01.png",
+          "title":"春天来了",
+          "author":"作者",
+          "comment_sum":"332"
+        },
+        {
+          "url":"www.baidu.com",
+          "icon_url":"../../res/image/icon_01.png",
+          "title":"冬天来了",
+          "author":"作者",
+          "comment_sum":"3232"
+        },
+        {
+          "url":"www.tencent.com",
+          "icon_url":"../../res/image/icon_01.png",
+          "title":"夏天来了",
+          "author":"作者",
+          "comment_sum":"92"
+        }
       ]
     });
+  },
+  recommendClick:function(event){
+    console.log(event.currentTarget.dataset);
   }
 })
